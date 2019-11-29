@@ -10,6 +10,7 @@ db_port=""
 vault_active_node=""
 
 ## login to vault
+export VAULT_ADDR=$vault_active_node
 vault login $token
 ## enable database secret
 vault secrets enable database
